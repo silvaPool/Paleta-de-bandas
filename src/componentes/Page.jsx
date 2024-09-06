@@ -21,12 +21,12 @@ function Page() {
 
   return (
     <>
-      <Box sx={{ border: "1px solid black", height: "100vh", display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <Box sx={{ border: "1px solid red", height: "100vh", display: 'flex', justifyContent: 'space-around', alignItems: 'center', padding: '10px' }}>
         <Box>
           <Paleta onBandSelect={setSelectedBand} />
         </Box>
 
-        <Box>
+        <Box sx={{width: '60vw', height: '50vh', textAlign: 'center'}}>
             {renderSelectedBand()}
         </Box>
       </Box>
