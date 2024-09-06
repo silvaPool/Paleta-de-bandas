@@ -1,46 +1,70 @@
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
-function Paleta({onBandSelect}) {
+function Paleta({ onBandSelect }) {
   return (
     <div class="card">
       <div class="title">
-        <p class="heading">MONOCHROMIA</p>
-        <p class="desc">palette reference</p>
+        <p class="heading">Paleta de Bandas</p>
+        <p class="desc">Selecione abaixo</p>
       </div>
       <div class="wrapper">
         <div class="color black">
-          Foster The People
-          <span class="hex">Indie Rock</span>
+          <button
+            onClick={() => onBandSelect("Foster The People")}
+            className="button"
+          >
+            <span>Foster The People</span>
+            <span class="hex">Indie Rock</span>
+          </button>
         </div>
         <div class="color eerie-black">
-          <Button onClick={() => onBandSelect("Nirvana")}>
-            Nirvana
+          <button onClick={() => onBandSelect("Nirvana")} className="button">
+           <span>Nirvana</span>
             <span class="hex">Grunge</span>
-          </Button>
+          </button>
         </div>
         <div class="color chinese-black">
-          Black Sabbath
-          <span class="hex">Heavy Metal</span>
+          <button
+            onClick={() => onBandSelect("Black Sabbath")}
+            className="button"
+          >
+            <span>Black Sabbath</span>
+            <span class="hex">Heavy Metal</span>
+          </button>
         </div>
         <div class="color night-rider">
-          The Beatles
-          <span class="hex">Rock Clássico</span>
+          <button
+            onClick={() => onBandSelect("The Beatles")}
+            className="button"
+          >
+            <span>The Beatles</span>
+            <span class="hex">Rock Clássico</span>
+          </button>
         </div>
         <div class="color chinese-white">
-          Evanescence
-          <span class="hex">M. Alternativo</span>
+          <button
+            onClick={() => onBandSelect("Evanescence")}
+            className="button"
+          >
+            <span>Evanescence</span>
+            <span class="hex">Evanescence</span>
+          </button>
         </div>
         <div class="color anti-flash-white">
-          Bob Dylan
-          <span class="hex">Rock</span>
+          <button onClick={() => onBandSelect("Bob Dylan")} className="button">
+            <span>Bob Dylan</span>
+            <span class="hex">Bob Dylan</span>
+          </button>
         </div>
         <div class="color white">
-          Pearl Jam
-          <span class="hex">Grunge</span>
+          <button onClick={() => onBandSelect("Pearl Jam")} className="button">
+            <span>Pearl Jam</span>
+            <span class="hex">Pearl Jam</span>
+          </button>
         </div>
         <div class="border">
-          common border radius <span>5px | 8px</span>
+          paleta de bandas <span>rock | roll</span>
         </div>
       </div>
     </div>
